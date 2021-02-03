@@ -30,20 +30,41 @@ class Cart extends StatelessWidget {
             },
             tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
           ),
-          IconButton(
-            icon: const Icon(Icons.shopping_cart_outlined),
-            color: Colors.black,
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return Cart();
-                  },
+          Stack(
+            children: [
+              IconButton(
+                icon: const Icon(Icons.shopping_cart_outlined),
+                color: Colors.black,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) {
+                        return Cart();
+                      },
+                    ),
+                  );
+                },
+              ),
+              Positioned.fill(
+                child: Align(
+                  alignment: Alignment.topRight,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 3, right: 4),
+                    child: CircleAvatar(
+                      radius: 9,
+                      backgroundColor: Color(0xFFBD896A),
+                      child: Text(
+                        '3',
+                        style: TextStyle(
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
-              );
-            },
-            tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+              ),
+            ],
           ),
         ],
       ),
