@@ -1,16 +1,11 @@
 # online_shop
 
-A new Flutter project.
+A dribble challenge
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+I try to create a front app o the dribble Fashion online shop - Mobile App by Anastasia
 
-A few resources to get you started if this is your first Flutter project:
+![alt text](https://cdn.dribbble.com/users/4189231/screenshots/14398650/media/5372618cabab7d6af68a438cad8c5398.png)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://dribbble.com/shots/14398650-Fashion-online-shop-Mobile-App
