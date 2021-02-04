@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'categories.dart';
 import 'cart.dart';
+import 'signin.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -12,7 +13,16 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.transparent,
         leading: IconButton(
           icon: Image.asset('assets/moi.png'),
-          onPressed: () => {},
+          onPressed: () => {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (BuildContext context) {
+                  return Signin();
+                },
+              ),
+            ),
+          },
         ),
         actions: <Widget>[
           IconButton(
@@ -334,5 +344,3 @@ class Home extends StatelessWidget {
     );
   }
 }
-
-// 'assets/images/moi.png',
