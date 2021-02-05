@@ -168,32 +168,24 @@ class Produit extends StatelessWidget {
                       icon: const Icon(Icons.circle),
                       color: Colors.grey,
                       onPressed: () {},
-                      tooltip: MaterialLocalizations.of(context)
-                          .openAppDrawerTooltip,
                     ),
                     IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.circle),
                       color: Colors.brown[100],
                       onPressed: () {},
-                      tooltip: MaterialLocalizations.of(context)
-                          .openAppDrawerTooltip,
                     ),
                     IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.circle),
                       color: Colors.brown[300],
                       onPressed: () {},
-                      tooltip: MaterialLocalizations.of(context)
-                          .openAppDrawerTooltip,
                     ),
                     IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.circle),
                       color: Colors.brown,
                       onPressed: () {},
-                      tooltip: MaterialLocalizations.of(context)
-                          .openAppDrawerTooltip,
                     ),
                   ],
                 ),
@@ -223,24 +215,18 @@ class Produit extends StatelessWidget {
                       icon: const Icon(Icons.circle),
                       color: Colors.black,
                       onPressed: () {},
-                      tooltip: MaterialLocalizations.of(context)
-                          .openAppDrawerTooltip,
                     ),
                     IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.circle),
                       color: Colors.grey[300],
                       onPressed: () {},
-                      tooltip: MaterialLocalizations.of(context)
-                          .openAppDrawerTooltip,
                     ),
                     IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.circle),
                       color: Colors.grey[300],
                       onPressed: () {},
-                      tooltip: MaterialLocalizations.of(context)
-                          .openAppDrawerTooltip,
                     ),
                   ],
                 ),
@@ -251,7 +237,16 @@ class Produit extends StatelessWidget {
               Container(
                 child: Center(
                   child: MaterialButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) {
+                            return Cart();
+                          },
+                        ),
+                      );
+                    },
                     color: Colors.black,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
@@ -260,21 +255,13 @@ class Produit extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Center(
-                          child: IconButton(
-                            iconSize: 30.0,
-                            icon: const Icon(Icons.shopping_bag),
-                            color: Colors.grey,
-                            onPressed: () {},
-                            tooltip: MaterialLocalizations.of(context)
-                                .openAppDrawerTooltip,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 5.0,
+                        Icon(
+                          Icons.shopping_bag_rounded,
+                          size: 25.0,
+                          color: Colors.white,
                         ),
                         Text(
-                          'Add to cart',
+                          '  Add to cart',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 20.0,
@@ -285,9 +272,6 @@ class Produit extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
-                height: 5.0,
-              ),
             ],
           ),
         ),
@@ -295,3 +279,12 @@ class Produit extends StatelessWidget {
     );
   }
 }
+
+// IconButton(
+//                             iconSize: 30.0,
+//                             icon: const Icon(Icons.shopping_bag),
+//                             color: Colors.grey,
+//                             onPressed: () {},
+//                             tooltip: MaterialLocalizations.of(context)
+//                                 .openAppDrawerTooltip,
+//                           ),

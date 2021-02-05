@@ -25,7 +25,6 @@ class Signin extends StatelessWidget {
                 ),
               );
             },
-            tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
           ),
           Stack(
             children: [
