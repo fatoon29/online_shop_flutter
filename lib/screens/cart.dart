@@ -10,7 +10,7 @@ class Cart extends StatelessWidget {
         elevation: 0.0,
         backgroundColor: Colors.transparent,
         leading: IconButton(
-          icon: Image.asset('assets/moi.png'),
+          icon: Image.asset('assets/images/moi.png'),
           onPressed: () => {},
         ),
         actions: <Widget>[
@@ -97,7 +97,7 @@ class Cart extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Image.asset('assets/1.png'),
+                      Image.asset('assets/images/1.png'),
                       Padding(
                         padding: const EdgeInsets.only(right: 15.0),
                         child: Text(
@@ -129,7 +129,7 @@ class Cart extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Image.asset('assets/2.png'),
+                      Image.asset('assets/images/2.png'),
                       Padding(
                         padding: const EdgeInsets.only(right: 15.0),
                         child: Text(
@@ -202,7 +202,7 @@ class Cart extends StatelessWidget {
               Container(
                 height: 50,
                 child: Image.asset(
-                  'assets/icon_paiement.png',
+                  'assets/images/icon_paiement.png',
                 ),
               ),
             ],

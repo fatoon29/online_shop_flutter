@@ -12,7 +12,7 @@ class Compte extends StatelessWidget {
         elevation: 0.0,
         backgroundColor: Colors.transparent,
         leading: IconButton(
-          icon: Image.asset('assets/moi.png'),
+          icon: Image.asset('assets/images/moi.png'),
           onPressed: () => {
             Navigator.push(
               context,
@@ -98,7 +98,7 @@ class Compte extends StatelessWidget {
                   radius: 70,
                   backgroundColor: Color(0xFFE7E8E9),
                   backgroundImage: AssetImage(
-                    'assets/moi.png',
+                    'assets/images/moi.png',
                   ),
                 ),
               ),
@@ -159,7 +159,7 @@ class Compte extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Image.asset('assets/1.png'),
+                      Image.asset('assets/images/1.png'),
                     ],
                   ),
                 ),

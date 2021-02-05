@@ -13,7 +13,7 @@ class WomenClothes extends StatelessWidget {
         elevation: 0.0,
         backgroundColor: Colors.transparent,
         leading: IconButton(
-          icon: Image.asset('assets/moi.png'),
+          icon: Image.asset('assets/images/moi.png'),
           onPressed: () => {
             Navigator.push(
               context,
@@ -144,7 +144,7 @@ class WomenClothes extends StatelessWidget {
                               Card(
                                 color: Color(0xFFE7E8E9),
                                 child: Image.asset(
-                                  'assets/5.png',
+                                  'assets/images/5.png',
                                   fit: BoxFit.cover,
                                 ),
                                 shape: RoundedRectangleBorder(
@@ -204,7 +204,7 @@ class WomenClothes extends StatelessWidget {
                               Card(
                                 color: Color(0xFFE7E8E9),
                                 child: Image.asset(
-                                  'assets/6.png',
+                                  'assets/images/6.png',
                                   fit: BoxFit.cover,
                                 ),
                                 shape: RoundedRectangleBorder(
@@ -260,7 +260,7 @@ class WomenClothes extends StatelessWidget {
                               Card(
                                 color: Color(0xFFE7E8E9),
                                 child: Image.asset(
-                                  'assets/7.png',
+                                  'assets/images/7.png',
                                   fit: BoxFit.cover,
                                 ),
                                 shape: RoundedRectangleBorder(
@@ -312,7 +312,7 @@ class WomenClothes extends StatelessWidget {
                             Card(
                               color: Color(0xFFE7E8E9),
                               child: Image.asset(
-                                'assets/8.png',
+                                'assets/images/8.png',
                                 fit: BoxFit.cover,
                               ),
                               shape: RoundedRectangleBorder(

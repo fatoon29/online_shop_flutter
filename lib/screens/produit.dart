@@ -11,7 +11,7 @@ class Produit extends StatelessWidget {
         elevation: 0.0,
         backgroundColor: Colors.transparent,
         leading: IconButton(
-          icon: Image.asset('assets/moi.png'),
+          icon: Image.asset('assets/images/moi.png'),
           onPressed: () => {
             Navigator.push(
               context,
@@ -85,7 +85,7 @@ class Produit extends StatelessWidget {
               Container(
                 child: Center(
                   child: Image.asset(
-                    'assets/9.jpg',
+                    'assets/images/9.jpg',
                   ),
                 ),
               ),

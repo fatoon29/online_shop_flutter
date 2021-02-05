@@ -12,7 +12,7 @@ class Home extends StatelessWidget {
         elevation: 0.0,
         backgroundColor: Colors.transparent,
         leading: IconButton(
-          icon: Image.asset('assets/moi.png'),
+          icon: Image.asset('assets/images/moi.png'),
           onPressed: () => {
             Navigator.push(
               context,
@@ -143,7 +143,7 @@ class Home extends StatelessWidget {
                               Card(
                                 color: Color(0xFFE7E8E9),
                                 child: Image.asset(
-                                  'assets/1.png',
+                                  'assets/images/1.png',
                                   fit: BoxFit.cover,
                                 ),
                                 shape: RoundedRectangleBorder(
@@ -192,7 +192,7 @@ class Home extends StatelessWidget {
                             Card(
                               color: Color(0xFFE7E8E9),
                               child: Image.asset(
-                                'assets/2.png',
+                                'assets/images/2.png',
                                 fit: BoxFit.cover,
                               ),
                               shape: RoundedRectangleBorder(
@@ -247,7 +247,7 @@ class Home extends StatelessWidget {
                               Card(
                                 color: Color(0xFFE7E8E9),
                                 child: Image.asset(
-                                  'assets/3.png',
+                                  'assets/images/3.png',
                                   fit: BoxFit.cover,
                                 ),
                                 shape: RoundedRectangleBorder(
@@ -299,7 +299,7 @@ class Home extends StatelessWidget {
                             Card(
                               color: Color(0xFFE7E8E9),
                               child: Image.asset(
-                                'assets/4.png',
+                                'assets/images/4.png',
                                 fit: BoxFit.cover,
                               ),
                               shape: RoundedRectangleBorder(

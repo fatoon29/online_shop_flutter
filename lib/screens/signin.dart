@@ -78,7 +78,7 @@ class Signin extends StatelessWidget {
                     radius: 70,
                     backgroundColor: Color(0xFFE7E8E9),
                     backgroundImage: AssetImage(
-                      'assets/avatar.png',
+                      'assets/images/avatar.png',
                     ),
                   ),
                 ),
@@ -223,11 +223,11 @@ class Signin extends StatelessWidget {
                 ),
                 Container(
                   width: 300,
-                  child: Image.asset('assets/fb.png'),
+                  child: Image.asset('assets/images/fb.png'),
                 ),
                 Container(
                   width: 300,
-                  child: Image.asset('assets/google.png'),
+                  child: Image.asset('assets/images/google.png'),
                 ),
               ],
             ),
