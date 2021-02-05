@@ -1,72 +1,13 @@
 import 'package:flutter/material.dart';
 
 import 'categories.dart';
+import '../widget/customAppBar.dart';
 
 class Cart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0.0,
-        backgroundColor: Colors.transparent,
-        leading: IconButton(
-          icon: Image.asset('assets/images/moi.png'),
-          onPressed: () => {},
-        ),
-        actions: <Widget>[
-          IconButton(
-            icon: const Icon(Icons.tune_rounded),
-            color: Colors.black,
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return Categories();
-                  },
-                ),
-              );
-            },
-            tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
-          ),
-          Stack(
-            children: [
-              IconButton(
-                icon: const Icon(Icons.shopping_cart_outlined),
-                color: Colors.black,
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) {
-                        return Cart();
-                      },
-                    ),
-                  );
-                },
-              ),
-              Positioned.fill(
-                child: Align(
-                  alignment: Alignment.topRight,
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 3, right: 4),
-                    child: CircleAvatar(
-                      radius: 9,
-                      backgroundColor: Color(0xFFBD896A),
-                      child: Text(
-                        '3',
-                        style: TextStyle(
-                          color: Colors.black,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
+      appBar: CustomAppBar(),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Padding(
