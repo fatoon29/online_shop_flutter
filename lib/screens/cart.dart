@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'categories.dart';
 import '../widget/customAppBar.dart';
 
 class Cart extends StatelessWidget {

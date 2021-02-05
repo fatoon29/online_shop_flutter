@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widget/customAppBar.dart';
+import '../widget/productWidget.dart';
 import 'produit.dart';
 
 class WomenClothes extends StatelessWidget {
@@ -57,227 +58,22 @@ class WomenClothes extends StatelessWidget {
               SizedBox(
                 height: 10.0,
               ),
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      left: 5.0,
-                      right: 10.0,
-                    ),
-                    child: Column(
-                      children: [
-                        Container(
-                          height: 200,
-                          child: Stack(
-                            children: [
-                              Card(
-                                color: Color(0xFFE7E8E9),
-                                child: Image.asset(
-                                  'assets/images/5.png',
-                                  fit: BoxFit.cover,
-                                ),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20.0),
-                                ),
-                                elevation: 0.0,
-                              ),
-                              Positioned.fill(
-                                child: Align(
-                                  alignment: Alignment.bottomRight,
-                                  child: MaterialButton(
-                                    onPressed: () {},
-                                    color: Colors.white,
-                                    child: Icon(
-                                      Icons.favorite_outline_rounded,
-                                      size: 18,
-                                    ),
-                                    shape: CircleBorder(),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Text(
-                          'Combi',
-                          textAlign: TextAlign.left,
-                        ),
-                        Text(
-                          '45.95€',
-                          textAlign: TextAlign.left,
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        SizedBox(
-                          height: 40.0,
-                        ),
-                      ],
-                    ),
-                  ),
-                  Column(
-                    children: [
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (BuildContext context) {
-                                return Produit();
-                              },
-                            ),
-                          );
-                        },
-                        child: Container(
-                          height: 240,
-                          child: Stack(
-                            children: [
-                              Card(
-                                color: Color(0xFFE7E8E9),
-                                child: Image.asset(
-                                  'assets/images/6.png',
-                                  fit: BoxFit.cover,
-                                ),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20.0),
-                                ),
-                                elevation: 0.0,
-                              ),
-                              Positioned.fill(
-                                child: Align(
-                                  alignment: Alignment.bottomRight,
-                                  child: MaterialButton(
-                                    onPressed: () {},
-                                    color: Colors.white,
-                                    child: Icon(
-                                      Icons.favorite,
-                                      size: 18,
-                                      color: Color(0xFFBD896A),
-                                    ),
-                                    shape: CircleBorder(),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Text(
-                        'Jacket',
-                        textAlign: TextAlign.left,
-                      ),
-                      Text(
-                        '34.00€',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                    ],
-                  ),
-                ],
+              ProductWidget(
+                imageOne: 'assets/images/5.png',
+                descriptionOne: 'Combi',
+                priceOne: '45.95€',
+                imageTwo: 'assets/images/6.png',
+                descriptionTwo: 'Jacket',
+                priceTwo: '35.95€',
+                link: Produit(),
               ),
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      left: 5.0,
-                      right: 10.0,
-                    ),
-                    child: Column(
-                      children: [
-                        Container(
-                          height: 200,
-                          child: Stack(
-                            children: [
-                              Card(
-                                color: Color(0xFFE7E8E9),
-                                child: Image.asset(
-                                  'assets/images/7.png',
-                                  fit: BoxFit.cover,
-                                ),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20.0),
-                                ),
-                                elevation: 0.0,
-                              ),
-                              Positioned.fill(
-                                child: Align(
-                                  alignment: Alignment.bottomRight,
-                                  child: MaterialButton(
-                                    onPressed: () {},
-                                    color: Colors.white,
-                                    child: Icon(
-                                      Icons.favorite_outline_rounded,
-                                      size: 18,
-                                    ),
-                                    shape: CircleBorder(),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Text(
-                          'Some clothes',
-                          textAlign: TextAlign.left,
-                        ),
-                        Text(
-                          '45.95€',
-                          textAlign: TextAlign.left,
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        SizedBox(
-                          height: 40.0,
-                        ),
-                      ],
-                    ),
-                  ),
-                  Column(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        height: 240,
-                        child: Stack(
-                          children: [
-                            Card(
-                              color: Color(0xFFE7E8E9),
-                              child: Image.asset(
-                                'assets/images/8.png',
-                                fit: BoxFit.cover,
-                              ),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0),
-                              ),
-                              elevation: 0.0,
-                            ),
-                            Positioned.fill(
-                              child: Align(
-                                alignment: Alignment.bottomRight,
-                                child: MaterialButton(
-                                  onPressed: () {},
-                                  color: Colors.white,
-                                  child: Icon(
-                                    Icons.favorite_outline_rounded,
-                                    size: 18,
-                                  ),
-                                  shape: CircleBorder(),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Text(
-                        'Hippie dress',
-                        textAlign: TextAlign.left,
-                      ),
-                      Text(
-                        '35.95€',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                    ],
-                  ),
-                ],
+              ProductWidget(
+                imageOne: 'assets/images/7.png',
+                descriptionOne: 'Some clothes',
+                priceOne: '45.95€',
+                imageTwo: 'assets/images/8.png',
+                descriptionTwo: 'Other clothes',
+                priceTwo: '35.95€',
               ),
             ],
           ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widget/customAppBar.dart';
+import '../widget/productWidget.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -56,215 +57,22 @@ class Home extends StatelessWidget {
               SizedBox(
                 height: 10.0,
               ),
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      left: 5.0,
-                      right: 10.0,
-                    ),
-                    child: Column(
-                      children: [
-                        Container(
-                          height: 200,
-                          child: Stack(
-                            children: [
-                              Card(
-                                color: Color(0xFFE7E8E9),
-                                child: Image.asset(
-                                  'assets/images/1.png',
-                                  fit: BoxFit.cover,
-                                ),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20.0),
-                                ),
-                                elevation: 0.0,
-                              ),
-                              Positioned.fill(
-                                child: Align(
-                                  alignment: Alignment.bottomRight,
-                                  child: MaterialButton(
-                                    onPressed: () {},
-                                    color: Colors.white,
-                                    child: Icon(
-                                      Icons.favorite_outline_rounded,
-                                      size: 18,
-                                    ),
-                                    shape: CircleBorder(),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Text(
-                          'Pikachu Sweatchirt',
-                          textAlign: TextAlign.left,
-                        ),
-                        Text(
-                          '45.95€',
-                          textAlign: TextAlign.left,
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        SizedBox(
-                          height: 40.0,
-                        ),
-                      ],
-                    ),
-                  ),
-                  Column(
-                    children: [
-                      Container(
-                        height: 240,
-                        child: Stack(
-                          children: [
-                            Card(
-                              color: Color(0xFFE7E8E9),
-                              child: Image.asset(
-                                'assets/images/2.png',
-                                fit: BoxFit.cover,
-                              ),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0),
-                              ),
-                              elevation: 0.0,
-                            ),
-                            Positioned.fill(
-                              child: Align(
-                                alignment: Alignment.bottomRight,
-                                child: MaterialButton(
-                                  onPressed: () {},
-                                  color: Colors.white,
-                                  child: Icon(
-                                    Icons.favorite,
-                                    size: 18,
-                                    color: Color(0xFFBD896A),
-                                  ),
-                                  shape: CircleBorder(),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Text(
-                        'DragonBall Sweatchirt',
-                        textAlign: TextAlign.left,
-                      ),
-                      Text(
-                        '35.95€',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                    ],
-                  ),
-                ],
+              ProductWidget(
+                imageOne: 'assets/images/1.png',
+                descriptionOne: 'Pikachu Sweatchirt',
+                priceOne: '45.95€',
+                imageTwo: 'assets/images/2.png',
+                descriptionTwo: 'DragonBall Sweatchirt',
+                priceTwo: '35.95€',
+                link: Home(),
               ),
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      left: 5.0,
-                      right: 10.0,
-                    ),
-                    child: Column(
-                      children: [
-                        Container(
-                          height: 200,
-                          child: Stack(
-                            children: [
-                              Card(
-                                color: Color(0xFFE7E8E9),
-                                child: Image.asset(
-                                  'assets/images/3.png',
-                                  fit: BoxFit.cover,
-                                ),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20.0),
-                                ),
-                                elevation: 0.0,
-                              ),
-                              Positioned.fill(
-                                child: Align(
-                                  alignment: Alignment.bottomRight,
-                                  child: MaterialButton(
-                                    onPressed: () {},
-                                    color: Colors.white,
-                                    child: Icon(
-                                      Icons.favorite_outline_rounded,
-                                      size: 18,
-                                    ),
-                                    shape: CircleBorder(),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Text(
-                          'Pikachu Sweatchirt',
-                          textAlign: TextAlign.left,
-                        ),
-                        Text(
-                          '45.95€',
-                          textAlign: TextAlign.left,
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        SizedBox(
-                          height: 40.0,
-                        ),
-                      ],
-                    ),
-                  ),
-                  Column(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        height: 240,
-                        child: Stack(
-                          children: [
-                            Card(
-                              color: Color(0xFFE7E8E9),
-                              child: Image.asset(
-                                'assets/images/4.png',
-                                fit: BoxFit.cover,
-                              ),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0),
-                              ),
-                              elevation: 0.0,
-                            ),
-                            Positioned.fill(
-                              child: Align(
-                                alignment: Alignment.bottomRight,
-                                child: MaterialButton(
-                                  onPressed: () {},
-                                  color: Colors.white,
-                                  child: Icon(
-                                    Icons.favorite_outline_rounded,
-                                    size: 18,
-                                  ),
-                                  shape: CircleBorder(),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Text(
-                        'DragonBall Sweatchirt',
-                        textAlign: TextAlign.left,
-                      ),
-                      Text(
-                        '35.95€',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                    ],
-                  ),
-                ],
+              ProductWidget(
+                imageOne: 'assets/images/3.png',
+                descriptionOne: 'Minion Sweatchirt',
+                priceOne: '45.95€',
+                imageTwo: 'assets/images/4.png',
+                descriptionTwo: 'Assassin\'s creed Sweatchirt',
+                priceTwo: '35.95€',
               ),
             ],
           ),
