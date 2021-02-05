@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../widget/categorieWidget.dart';
 import 'women-clothes.dart';
 
 class Categories extends StatelessWidget {
@@ -27,130 +28,25 @@ class Categories extends StatelessWidget {
           padding: EdgeInsets.all(25.0),
           child: Column(
             children: [
-              GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) {
-                        return WomenClothes();
-                      },
-                    ),
-                  );
-                },
-                child: Container(
-                  height: 180,
-                  child: Card(
-                    color: Color(0xFFE7E8E9),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20.0),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left: 15.0),
-                          child: Text(
-                            'Women',
-                            style: TextStyle(
-                              fontFamily: 'CocoGoose',
-                              fontSize: 25.0,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                        Image.asset('assets/images/femme.png'),
-                      ],
-                    ),
-                  ),
-                ),
+              CategorieWidget(
+                text: 'Women',
+                image: 'assets/images/femme.png',
+                link: WomenClothes(),
               ),
-              SizedBox(
-                height: 10.0,
+              CategorieWidget(
+                text: 'Men',
+                image: 'assets/images/homme.png',
+                link: WomenClothes(),
               ),
-              Container(
-                height: 180,
-                child: Card(
-                  color: Color(0xFFE7E8E9),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 15.0),
-                        child: Text(
-                          'Men',
-                          style: TextStyle(
-                            fontFamily: 'CocoGoose',
-                            fontSize: 25.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                      Image.asset('assets/images/homme.png'),
-                    ],
-                  ),
-                ),
+              CategorieWidget(
+                text: 'Kids',
+                image: 'assets/images/enfant.png',
+                link: WomenClothes(),
               ),
-              SizedBox(
-                height: 10.0,
-              ),
-              Container(
-                height: 180,
-                child: Card(
-                  color: Color(0xFFE7E8E9),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 15.0),
-                        child: Text(
-                          'Kids',
-                          style: TextStyle(
-                            fontFamily: 'CocoGoose',
-                            fontSize: 25.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                      Image.asset('assets/images/enfant.png'),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 10.0,
-              ),
-              Container(
-                height: 180,
-                child: Card(
-                  color: Color(0xFFE7E8E9),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 15.0),
-                        child: Text(
-                          'New collection',
-                          style: TextStyle(
-                            fontFamily: 'CocoGoose',
-                            fontSize: 25.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                      Image.asset('assets/images/new.png'),
-                    ],
-                  ),
-                ),
+              CategorieWidget(
+                text: 'New Collection',
+                image: 'assets/images/new.png',
+                link: WomenClothes(),
               ),
             ],
           ),
