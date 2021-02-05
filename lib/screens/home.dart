@@ -73,6 +73,7 @@ class Home extends StatelessWidget {
                 imageTwo: 'assets/images/4.png',
                 descriptionTwo: 'Assassin\'s creed Sweatchirt',
                 priceTwo: '35.95€',
+                link: Home(),
               ),
             ],
           ),
